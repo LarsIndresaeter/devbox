@@ -13,9 +13,9 @@ function coc-install()
     nvim --headless +"CocInstall -sync coc-word|qall"
     nvim --headless +"CocInstall -sync coc-dictionary|qall"
     nvim --headless +"CocInstall -sync coc-webview|qall"
-    nvim --headless +"CocInstall -sync coc-markdown-preview-enhanced|qall"
-    nvim --headless +"CocInstall -sync coc-ccls|qall"
-    nvim --headless +"CocInstall -sync coc-explorer|qall"
+    #nvim --headless +"CocInstall -sync coc-markdown-preview-enhanced|qall"
+    #nvim --headless +"CocInstall -sync coc-ccls|qall"
+    #nvim --headless +"CocInstall -sync coc-explorer|qall"
 }
 
 coc-install
