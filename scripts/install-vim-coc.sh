@@ -4,6 +4,8 @@ set -ex
 
 function coc-install()
 {
+    #rm -fr ~/.config/nvim/plugged
+
     nvim --headless +"CocUpdateSync |qall"
 
     nvim --headless +"CocInstall -sync coc-json|qall"
