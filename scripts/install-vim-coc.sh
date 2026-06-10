@@ -4,6 +4,8 @@ set -ex
 
 function coc-install()
 {
+    nvim --headless +"CocUpdateSync |qall"
+
     nvim --headless +"CocInstall -sync coc-json|qall"
     nvim --headless +"CocInstall -sync coc-cmake|qall"
     nvim --headless +"CocInstall -sync coc-clangd|qall"
