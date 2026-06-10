@@ -10,8 +10,6 @@ sudo apt-get install -y ccls
 sudo apt-get install -y llvm
 sudo apt-get install -y clang
 sudo apt-get install -y clang-format
-#sudo apt-get install -y nodejs
-#sudo apt-get install -y npm
 
 sudo snap install nvim --classic
-
+sudo snap install node --classic

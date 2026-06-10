@@ -49,3 +49,4 @@ function coc-install()
 }
 
 install-plugins
+coc-install
