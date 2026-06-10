@@ -4,18 +4,18 @@ set -ex
 
 function coc-install()
 {
-    nvim -c "CocInstall coc-explorer" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-json" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-cmake" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-clangd" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-pyright" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-ccls" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-markdownlint" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-prettier" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-word" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-dictionary" -c ":q" -c ":q"
-    nvim -c "coc-webview" -c ":q" -c ":q"
-    nvim -c "CocInstall coc-markdown-preview-enhanced" -c ":q" -c ":q"
+    nvim --headless +"CocInstall -sync coc-json|qall"
+    nvim --headless +"CocInstall -sync coc-cmake|qall"
+    nvim --headless +"CocInstall -sync coc-clangd|qall"
+    nvim --headless +"CocInstall -sync coc-pyright|qall"
+    nvim --headless +"CocInstall -sync coc-markdownlint|qall"
+    nvim --headless +"CocInstall -sync coc-prettier|qall"
+    nvim --headless +"CocInstall -sync coc-word|qall"
+    nvim --headless +"CocInstall -sync coc-dictionary|qall"
+    nvim --headless +"CocInstall -sync coc-webview|qall"
+    nvim --headless +"CocInstall -sync coc-markdown-preview-enhanced|qall"
+    nvim --headless +"CocInstall -sync coc-ccls|qall"
+    nvim --headless +"CocInstall -sync coc-explorer|qall"
 }
 
 coc-install
