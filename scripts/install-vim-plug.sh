@@ -31,22 +31,4 @@ function install-plugins()
     nvim -c ":PlugInstall!" -c ":q" -c ":q"
 }
 
-function coc-install()
-{
-    nvim -c "CocInstall coc-explorer"
-    nvim -c "CocInstall coc-json"
-    nvim -c "CocInstall coc-cmake"
-    nvim -c "CocInstall coc-clangd"
-    nvim -c "CocInstall coc-pyright"
-    nvim -c "CocInstall coc-ccls"
-    nvim -c "CocInstall coc-markdownlint"
-    nvim -c "CocInstall coc-prettier"
-    nvim -c "CocInstall coc-word"
-    nvim -c "CocInstall coc-dictionary"
-    nvim -c "coc-webview"
-    nvim -c "CocInstall coc-markdown-preview-enhanced"
-
-}
-
 install-plugins
-coc-install

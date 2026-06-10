@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -ex
+
+sudo snap install nvim --classic
+sudo snap install node --classic
+

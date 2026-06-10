@@ -11,5 +11,3 @@ sudo apt-get install -y llvm
 sudo apt-get install -y clang
 sudo apt-get install -y clang-format
 
-sudo snap install nvim --classic
-sudo snap install node --classic
