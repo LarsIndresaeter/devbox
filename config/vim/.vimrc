@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')                                          
+
 " file formatting
-"Plug 'vhdirk/vim-cmake'
+Plug 'vhdirk/vim-cmake'
 Plug 'alepez/vim-gtest'
 Plug 'rhysd/vim-clang-format'
 Plug 'matthew-brett/vim-rst-sections'
