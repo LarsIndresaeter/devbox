@@ -10,6 +10,15 @@ scripts for setting up a developer box tmux, neovim and my favorite plugins.
 docker images are build for testing the scripts and for the cases when you don't want to install tools on a machine.
 
 ```bash
-docker run -it -v .:/home/ubuntu/$(basename $PWD) devbox:ubuntu-24.04 
+docker run -it ghcr.io/larsindresaeter/devbox-ubuntu-24.04:latest sh
 ```
+
+let you test vim
+
+```bash
+docker run -it -v .:/home/ubuntu/$(basename $PWD) ghcr.io/larsindresaeter/devbox-ubuntu-24.04:latest tmux
+```
+
+let you edit the files in your directory.
+Tmux is used as the starting point to take advantace of the combination of tmux and vim.
 
