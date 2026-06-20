@@ -28,7 +28,6 @@ install-plugin()
 build-docker-image()
 {
     echo "build docker image"
-    docker rmi devbox:ubuntu-24.04
     echo "docker build -t devbox:ubuntu-22.04 -f ${TOPLEVEL_PATH}/dockerfiles/ubuntu-22.04/Dockerfile ${TOPLEVEL_PATH}"
     docker build -t devbox:ubuntu-22.04 -f ${TOPLEVEL_PATH}/dockerfiles/ubuntu-22.04/Dockerfile ${TOPLEVEL_PATH}
     docker build -t devbox:ubuntu-24.04 -f ${TOPLEVEL_PATH}/dockerfiles/ubuntu-24.04/Dockerfile ${TOPLEVEL_PATH}

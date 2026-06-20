@@ -42,15 +42,9 @@ then
         apt-get install -y neovim
     fi
 
-	if command -v nvm &> /dev/null; then
-        echo "nvm is installed"
-    else
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
-        #npm install coc-explorer --legacy-peer-deps
-    fi
-
+    #curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
     #source ~/.bashrc
-    nvm install --lts
+    #nvm install --lts
     #npm install coc-explorer --legacy-peer-deps
 
     chown -R $(whoami) ~/.npm
