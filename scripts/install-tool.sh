@@ -39,7 +39,7 @@ then
 	    echo "install nvim"
 	    echo "run this script as root or use sudo"
 
-	    snap install nvim --classic
+        apt-get install -y neovim
     fi
 
 	if command -v npm &> /dev/null; then
@@ -59,6 +59,7 @@ then
     echo "install dependencies"
 	echo "run this script as root or use sudo"
     apt-get install -y curl
+    apt-get install -y cmake
     apt-get install -y exuberant-ctags
     apt-get install -y ccls
     apt-get install -y llvm
