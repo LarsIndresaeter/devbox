@@ -4,7 +4,10 @@ create and push a tag.
 You should obviously replace the version `v0.0.1` with another string.
 
 ```bash
+git push
 git tag -a v0.0.1 -m v0.0.1
 git push origin v0.0.1
 ```
+
+Note that you should be on the main branch for this to make sense
 
