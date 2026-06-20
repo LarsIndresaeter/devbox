@@ -35,17 +35,17 @@ then
       sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     fi
 
-    #nvim --headless +"CocUpdateSync |qall"
+    nvim --headless +"CocUpdateSync |qall"
 
-    #nvim --headless +"CocInstall -sync coc-json|qall"
-    #nvim --headless +"CocInstall -sync coc-cmake|qall"
-    #nvim --headless +"CocInstall -sync coc-clangd|qall"
-    #nvim --headless +"CocInstall -sync coc-pyright|qall"
-    #nvim --headless +"CocInstall -sync coc-markdownlint|qall"
-    #nvim --headless +"CocInstall -sync coc-prettier|qall"
-    #nvim --headless +"CocInstall -sync coc-word|qall"
-    #nvim --headless +"CocInstall -sync coc-dictionary|qall"
-    #nvim --headless +"CocInstall -sync coc-webview|qall"
+    nvim --headless +"CocInstall -sync coc-json|qall"
+    nvim --headless +"CocInstall -sync coc-cmake|qall"
+    nvim --headless +"CocInstall -sync coc-clangd|qall"
+    nvim --headless +"CocInstall -sync coc-pyright|qall"
+    nvim --headless +"CocInstall -sync coc-markdownlint|qall"
+    nvim --headless +"CocInstall -sync coc-prettier|qall"
+    nvim --headless +"CocInstall -sync coc-word|qall"
+    nvim --headless +"CocInstall -sync coc-dictionary|qall"
+    nvim --headless +"CocInstall -sync coc-webview|qall"
     #nvim --headless +"CocInstall -sync coc-markdown-preview-enhanced|qall"
     #nvim --headless +"CocInstall -sync coc-ccls|qall"
     #nvim --headless +"CocInstall -sync coc-explorer|qall"
