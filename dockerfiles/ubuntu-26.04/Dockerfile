@@ -1,6 +1,6 @@
 FROM ubuntu:26.04
 
-RUN apt-get update && apt-get install -y git curl vim neovim exuberant-ctags nodejs
+RUN apt-get update && apt-get install -y git curl vim exuberant-ctags nodejs
 RUN apt-get update && apt-get install -y tmux llvm clang clangd-20 clang-format
 
 RUN useradd -ms /bin/bash devbox

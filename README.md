@@ -16,7 +16,7 @@ docker run -it ghcr.io/larsindresaeter/devbox-ubuntu-24.04:latest sh
 let you test vim
 
 ```bash
-docker run -it -v .:/home/ubuntu/$(basename $PWD) ghcr.io/larsindresaeter/devbox-ubuntu-24.04:latest tmux
+docker run -it -v .:/home/devbox/$(basename $PWD) ghcr.io/larsindresaeter/devbox-ubuntu-24.04:latest tmux
 ```
 
 let you edit the files in your directory.

@@ -65,23 +65,16 @@ Plug 'radenling/vim-dispatch-neovim'
 " dictionary
 Plug 'reedes/vim-wordy'
 
-" coc
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'weirongxu/coc-explorer'
-
 " debugging
 "Plug 'puremourning/vimspector'
 
 call plug#end()
 
-"source $HOME/.vim/coc.vim
-"source $HOME/.vim/coc-explorer.vim
 source $HOME/.vim/preferences.vim
 source $HOME/.vim/vim-airline.vim
 "source $HOME/.vim/tags.vim
 source $HOME/.vim/tagbar.vim
 source $HOME/.vim/tmuxline.vim
-"source $HOME/.vim/neomake.vim
 source $HOME/.vim/clang-format.vim
 source $HOME/.vim/riv.vim
 source $HOME/.vim/diff.vim

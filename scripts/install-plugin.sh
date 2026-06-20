@@ -6,8 +6,6 @@ TOPLEVEL_PATH=$( git rev-parse --show-toplevel )
 
 PARAM="$1"
 
-#echo "install-plugin ${PARAM}"
-
 if [ "${PARAM}" == "tmux" ]
 then
     cp ${TOPLEVEL_PATH}/tmux/.tmux.conf ~/.tmux.conf
@@ -16,23 +14,11 @@ then
     mkdir -p ~/.vim/autoload/
     cp ${TOPLEVEL_PATH}/config/vim/.vimrc ~/
     cp ${TOPLEVEL_PATH}/config/plugins/vim/* ~/.vim/
-
-    #if [ ! -f ~/.vim/autoload/plug.vim ]
-    #then
-        #curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    #fi
-
-    #vim +"PlugInstall | qall"
 elif [ "${PARAM}" == "neovim" ]
 then
     mkdir -p ~/.config/nvim/
     cp ${TOPLEVEL_PATH}/config/neovim/init.vim ~/.config/nvim/
     cp ${TOPLEVEL_PATH}/config/plugins/vim/* ~/.config/nvim/
-
-    #if [ ! -f ~/.local/share/plug.vim ]
-    #then
-      #sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-    #fi
 
     #nvim --headless +"CocUpdateSync |qall"
 
