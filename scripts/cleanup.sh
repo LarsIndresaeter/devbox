@@ -6,8 +6,6 @@ TOPLEVEL_PATH=$( git rev-parse --show-toplevel )
 
 PARAM="$1"
 
-echo "install-tool ${PARAM}"
-
 if [ "${PARAM}" == "tmux" ]
 then
     echo "remove tmux"

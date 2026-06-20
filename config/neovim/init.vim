@@ -1,3 +1,9 @@
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+      silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.config/nvim/plugged')                                          
 " file formatting
 "Plug 'vhdirk/vim-cmake'
@@ -67,7 +73,7 @@ Plug 'weirongxu/coc-explorer'
 
 call plug#end()
 
-source $HOME/.config/nvim/coc.vim
+"source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/coc-explorer.vim
 source $HOME/.config/nvim/preferences.vim
 source $HOME/.config/nvim/vim-airline.vim

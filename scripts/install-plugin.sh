@@ -17,10 +17,10 @@ then
     cp ${TOPLEVEL_PATH}/config/vim/.vimrc ~/
     cp ${TOPLEVEL_PATH}/config/plugins/vim/* ~/.vim/
 
-    if [ ! -f ~/.vim/autoload/plug.vim ]
-    then
-        curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    fi
+    #if [ ! -f ~/.vim/autoload/plug.vim ]
+    #then
+        #curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    #fi
 
     #vim +"PlugInstall | qall"
 elif [ "${PARAM}" == "neovim" ]
@@ -29,10 +29,10 @@ then
     cp ${TOPLEVEL_PATH}/config/neovim/init.vim ~/.config/nvim/
     cp ${TOPLEVEL_PATH}/config/plugins/vim/* ~/.config/nvim/
 
-    if [ ! -f ~/.local/share/plug.vim ]
-    then
-      sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-    fi
+    #if [ ! -f ~/.local/share/plug.vim ]
+    #then
+      #sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    #fi
 
     #nvim --headless +"CocUpdateSync |qall"
 
