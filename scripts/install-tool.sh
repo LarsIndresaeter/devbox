@@ -42,17 +42,17 @@ then
 	    snap install nvim --classic
     fi
 
-
-	if command -v node &> /dev/null; then
+	if command -v npm &> /dev/null; then
+        echo "node is installed"
+    else
 	    snap install node --classic --channel=24/stable
 	    npm install -g neovim
-	    npm install coc-explorer --legacy-peer-deps
-
-	    chown -R $(whoami) ~/.npm
-	    chown -R $(whoami) ~/.config/coc
-
-	    mkdir -p ~/.config/nvim
 	fi
+
+    chown -R $(whoami) ~/.npm
+    chown -R $(whoami) ~/.config/coc
+
+    mkdir -p ~/.config/nvim
 elif [ "${PARAM}" == "dependencies" ]
 then
     echo "install dependencies"
