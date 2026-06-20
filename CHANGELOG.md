@@ -5,6 +5,7 @@
 - use apt to install neovim
 - use nvm to install node
 - install neovim only in ubuntu 24.02 image
+- add dockerfile for ubuntu 26.04
 
 ## version 0.1.0
 

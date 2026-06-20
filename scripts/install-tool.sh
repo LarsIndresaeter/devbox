@@ -51,17 +51,5 @@ then
     chown -R $(whoami) ~/.config/coc
 
     mkdir -p ~/.config/nvim
-elif [ "${PARAM}" == "dependencies" ]
-then
-    echo "install dependencies"
-	echo "run this script as root or use sudo"
-    apt-get install -y curl
-    apt-get install -y cmake
-    apt-get install -y exuberant-ctags
-    apt-get install -y ccls
-    apt-get install -y llvm
-    apt-get install -y clang
-    apt-get install -y clangd-12
-    apt-get install -y clang-format
 fi
 

@@ -60,7 +60,7 @@ Plug 'radenling/vim-dispatch-neovim'
 Plug 'reedes/vim-wordy'
 
 " coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'weirongxu/coc-explorer'
 
 " debugging

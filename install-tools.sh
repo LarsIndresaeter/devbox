@@ -31,6 +31,7 @@ build-docker-image()
     echo "docker build -t devbox:ubuntu-22.04 -f ${TOPLEVEL_PATH}/dockerfiles/ubuntu-22.04/Dockerfile ${TOPLEVEL_PATH}"
     docker build -t devbox:ubuntu-22.04 -f ${TOPLEVEL_PATH}/dockerfiles/ubuntu-22.04/Dockerfile ${TOPLEVEL_PATH}
     docker build -t devbox:ubuntu-24.04 -f ${TOPLEVEL_PATH}/dockerfiles/ubuntu-24.04/Dockerfile ${TOPLEVEL_PATH}
+    docker build -t devbox:ubuntu-26.04 -f ${TOPLEVEL_PATH}/dockerfiles/ubuntu-26.04/Dockerfile ${TOPLEVEL_PATH}
 }
 
 while getopts "t:p:r:dbah" opt; do
