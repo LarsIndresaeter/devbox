@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+#set -e
 
 TOPLEVEL_PATH=$( git rev-parse --show-toplevel )
 
@@ -42,13 +42,16 @@ then
         apt-get install -y neovim
     fi
 
-	if command -v npm &> /dev/null; then
-        echo "node is installed"
+	if command -v nvm &> /dev/null; then
+        echo "nvm is installed"
     else
-	    snap install node --classic --channel=24/stable
-	    npm install neovim
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
         #npm install coc-explorer --legacy-peer-deps
-	fi
+    fi
+
+    #source ~/.bashrc
+    nvm install --lts
+    #npm install coc-explorer --legacy-peer-deps
 
     chown -R $(whoami) ~/.npm
     chown -R $(whoami) ~/.config/coc

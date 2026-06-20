@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')                                          
 
 " file formatting
-Plug 'vhdirk/vim-cmake'
+"Plug 'vhdirk/vim-cmake'
 Plug 'alepez/vim-gtest'
 Plug 'rhysd/vim-clang-format'
 Plug 'matthew-brett/vim-rst-sections'
@@ -60,7 +60,7 @@ Plug 'radenling/vim-dispatch-neovim'
 Plug 'reedes/vim-wordy'
 
 " coc
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'weirongxu/coc-explorer'
 
 " debugging

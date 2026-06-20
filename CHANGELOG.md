@@ -2,6 +2,10 @@
 
 ## changes since version 0.1.0
 
+- use apt to install neovim
+- use nvm to install node
+- install neovim only in ubuntu 24.02 image
+
 ## version 0.1.0
 
 - installation of tmux, vim and neovim with plugins through installation script
