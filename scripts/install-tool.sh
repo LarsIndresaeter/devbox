@@ -44,8 +44,7 @@ then
 
 
 	if command -v node &> /dev/null; then
-	    snap install node --classic
-        npm install 24
+	    snap install node --classic --channel=24/stable
 	    npm install -g neovim
 	    npm install coc-explorer --legacy-peer-deps
 
