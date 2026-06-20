@@ -31,8 +31,8 @@ Plug 'airblade/vim-gitgutter'
 
 " File manager
 Plug 'ctrlpvim/ctrlp.vim'
-"Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-"Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Navigation
 Plug 'szw/vim-maximizer'
@@ -59,26 +59,26 @@ Plug 'radenling/vim-dispatch-neovim'
 Plug 'reedes/vim-wordy'
 
 " coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'weirongxu/coc-explorer'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'weirongxu/coc-explorer'
 
 " debugging
 "Plug 'puremourning/vimspector'
 
 call plug#end()
 
-source $HOME/.config/nvim/coc.vim
-source $HOME/.config/nvim/coc-explorer.vim
-source $HOME/.config/nvim/preferences.vim
-source $HOME/.config/nvim/vim-airline.vim
-"source $HOME/.config/nvim/tags.vim
-source $HOME/.config/nvim/tagbar.vim
-source $HOME/.config/nvim/tmuxline.vim
-"source $HOME/.config/nvim/neomake.vim
-source $HOME/.config/nvim/clang-format.vim
-source $HOME/.config/nvim/riv.vim
-source $HOME/.config/nvim/diff.vim
-source $HOME/.config/nvim/vimux.vim
-source $HOME/.config/nvim/vimspector.vim
-source $HOME/.config/nvim/interactive-window.vim
+"source $HOME/.vim/coc.vim
+"source $HOME/.vim/coc-explorer.vim
+source $HOME/.vim/preferences.vim
+source $HOME/.vim/vim-airline.vim
+"source $HOME/.vim/tags.vim
+source $HOME/.vim/tagbar.vim
+source $HOME/.vim/tmuxline.vim
+"source $HOME/.vim/neomake.vim
+source $HOME/.vim/clang-format.vim
+source $HOME/.vim/riv.vim
+source $HOME/.vim/diff.vim
+source $HOME/.vim/vimux.vim
+source $HOME/.vim/vimspector.vim
+source $HOME/.vim/interactive-window.vim
 
