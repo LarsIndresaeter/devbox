@@ -46,7 +46,8 @@ then
         echo "node is installed"
     else
 	    snap install node --classic --channel=24/stable
-	    npm install -g neovim
+	    npm install neovim
+        #npm install coc-explorer --legacy-peer-deps
 	fi
 
     chown -R $(whoami) ~/.npm
