@@ -13,6 +13,8 @@ mkdir -p ~/.dotfiles/nvim
 cp ${TOPLEVEL_PATH}/dotfiles/neovim/init.vim ~/.config/nvim/
 cp ${TOPLEVEL_PATH}/dotfiles/plug/* ~/.config/nvim/
 
+nvim +PlugInstall +qall
+
 #nvim --headless +"CocUpdateSync |qall"
 #nvim --headless +"CocInstall -sync coc-json|qall"
 #nvim --headless +"CocInstall -sync coc-cmake|qall"
