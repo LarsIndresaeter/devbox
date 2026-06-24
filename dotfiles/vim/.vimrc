@@ -4,7 +4,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
         autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.config/nvim/plugged')                                          
+call plug#begin('~/.vim/plugged')                                          
 
 " file formatting
 "Plug 'vhdirk/vim-cmake'
@@ -57,10 +57,8 @@ Plug 'farmergreg/vim-lastplace'
 " Productivity
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-surround'
-"Plug 'neomake/neomake'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-dispatch'
-Plug 'radenling/vim-dispatch-neovim'
 
 " dictionary
 Plug 'reedes/vim-wordy'
