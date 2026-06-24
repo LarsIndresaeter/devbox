@@ -5,5 +5,5 @@
 TOPLEVEL_PATH=$( git rev-parse --show-toplevel )
 
 echo "copy ctags config"
-cp ${TOPLEVEL_PATH}/dotfiles/ctags/.ctags.conf ~/.ctags.conf
+cp ${TOPLEVEL_PATH}/dotfiles/ctags/.ctags ~/.ctags
 
