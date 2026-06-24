@@ -27,3 +27,4 @@ Plugins like `nerdcommenter` and `vim-table-mode` adds extra functionality for a
 
 Documentation is never complete. Check out [init.vim](../config/neovim/init.vim) or [.vimrc](../config/vim/.vimrc) for the complete list of plugins.
 [vimawesome.com](https://vimawesome.com) is a great place to read about vim plugins.
+

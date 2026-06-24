@@ -17,9 +17,6 @@ Plug 'rhysd/open-pdf.vim'
 Plug 'chrisbra/unicode.vim'
 Plug 'vim-ruby/vim-ruby'
 
-" layout
-Plug 'romgrk/winteract.vim'
-
 " interactive window mode
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -49,7 +46,7 @@ Plug 'majutsushi/tagbar'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'hari-rangarajan/cctree'
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'benmills/vimux'
 Plug 'farmergreg/vim-lastplace'

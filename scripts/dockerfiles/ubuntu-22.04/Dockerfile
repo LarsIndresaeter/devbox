@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && apt-get install -y git curl vim exuberant-ctags nodejs
-RUN apt-get update && apt-get install -y tmux ccls llvm clang clangd-12 clang-format
+RUN apt-get update && apt-get install -y tmux ccls llvm clang clangd-12 clang-format fzf
 
 RUN useradd -ms /bin/bash devbox
 WORKDIR /home/devbox
