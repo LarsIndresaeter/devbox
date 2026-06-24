@@ -38,8 +38,8 @@ Plug 'airblade/vim-gitgutter'
 
 " File manager
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdtree'
+Plut 'xuyuanp/nerdtree-git-plugin'
 
 " Navigation
 Plug 'szw/vim-maximizer'
