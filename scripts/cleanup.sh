@@ -18,12 +18,12 @@ then
 elif [ "${PARAM}" == "neovim" ]
 then
     echo "remove neovim"
-    rm -rf ~/.config/nvim
+    rm -rf ~/.dotfiles/nvim
 
     echo "clean coc cache"
-    rm -rf ~/.config/coc/extensions
+    rm -rf ~/.dotfiles/coc/extensions
 
     echo "clean vim plug"
-    rm -fr ~/.config/nvim/plugged
+    rm -fr ~/.dotfiles/nvim/plugged
 fi
 

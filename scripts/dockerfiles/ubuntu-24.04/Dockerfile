@@ -10,7 +10,10 @@ COPY --chown=devbox:devbox ./ /home/devbox/install
 
 USER devbox
 
-RUN cd /home/devbox/install; bash install-tools.sh -a 
+RUN cd /home/devbox/install; bash scripts/install-tmux.sh
+RUN cd /home/devbox/install; bash scripts/install-vim.sh
+RUN cd /home/devbox/install; bash scripts/install-neovim.sh
+
 RUN rm -fr /home/devbox/install
 
 RUN vim +PlugInstall +qall
