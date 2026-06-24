@@ -7,8 +7,8 @@ TOPLEVEL_PATH=$( git rev-parse --show-toplevel )
 echo "create nvim dirs"
 mkdir -p ~/.dotfiles/nvim
 
-chown -R $(whoami) ~/.npm
-chown -R $(whoami) ~/.dotfiles/coc
+#chown -R $(whoami) ~/.npm
+#chown -R $(whoami) ~/.dotfiles/coc
 
 cp ${TOPLEVEL_PATH}/dotfiles/neovim/init.vim ~/.config/nvim/
 cp ${TOPLEVEL_PATH}/dotfiles/plug/* ~/.config/nvim/

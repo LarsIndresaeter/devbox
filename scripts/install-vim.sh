@@ -11,3 +11,5 @@ echo "copy vim files"
 cp ${TOPLEVEL_PATH}/dotfiles/vim/.vimrc ~/
 cp ${TOPLEVEL_PATH}/dotfiles/plug/* ~/.vim/
 
+vim +PlugInstall +qall
+

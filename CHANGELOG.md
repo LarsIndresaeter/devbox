@@ -6,6 +6,7 @@
 - use nvm to install node
 - install neovim only in ubuntu 24.02 image
 - add dockerfile for ubuntu 26.04
+- change layout and refactor scripts
 
 ## version 0.1.0
 
