@@ -1,0 +1,8 @@
+--recurse=yes
+--exclude=.git
+--exclude=BUILD
+--exclude=log/*
+--exclude=\*.swp
+--exclude=\*.bak
+--exclude=\*.pyc
+--exclude=\*.class
